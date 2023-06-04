@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venetory</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="font/stylesheet.css" />
+    <script type="text/javascript" src="scripts/productCount.js"></script>
+  </head>
+
+  <body>
+    <div class="d-flex">
+      <div class="part1">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo1.1.png" alt="Site Logo" width="200px"
+          /></a>
+        </div>
+        <div class="navslide">
+          <span>Navigation panel</span>
+          <ul>
+            <li>
+              <a href="index.html"
+                ><img src="img/dashboard-svgrepo-com.svg" alt="" width="28px" />
+                Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="stock.html"
+                ><img
+                  src="img/04d9a16ec558fcb7e07d9c35dce805bf.svg"
+                  alt=""
+                  width="28px"
+                />
+                Add items</a
+              >
+            </li>
+            <li>
+              <a href="profit.html"
+                ><img
+                  src="img/hand-money-rupee-coin-icon.svg"
+                  alt=""
+                  width="22px"
+                />
+                Your Profit</a
+              >
+            </li>
+            <li>
+              <a href="customers.html"
+                ><img src="img/credit list.svg" alt="" width="22px" /> Customer
+                list</a
+              >
+            </li>
+            <li>
+              <a href="sales.html"
+                ><img src="img/icon.svg" alt="" width="22px" /> Sell items</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="part2">
+        <div class="up-line">
+          <div class="container">
+            <div class="line-inside">
+              <a href="index.html"
+                ><img
+                  src="img/three-horizontal-lines-icon.svg"
+                  alt=""
+                  width="25px"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="title">
+            <h3>Dashboard</h3>
+          </div>
+          <div class="summary">
+            <div class="summary-title">
+              <h3>Summary</h3>
+            </div>
+            <div class="main">
+              <div class="d-flex">
+                <a href="stock.html">
+                  <div
+                    class="sum-inner"
+                    style="
+                      background-color: #00c0efcc;
+                      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    "
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="img/factory-stock-house-svgrepo-com.svg"
+                        alt=""
+                        width="15%"
+                      />
+                      <div class="content">
+                        <h3>Stock Items</h3>
+                        <span id="stock_count"></span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="lowStock.html">
+                  <div
+                    class="sum-inner"
+                    style="
+                      background-color: #00a65acc;
+                      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    "
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="img/purchase-order-icon.svg"
+                        alt=""
+                        width="15%"
+                      />
+                      <div class="content">
+                        <h3>Low stock items</h3>
+                        <span id="lowstock_count"></span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex">
+                <a href="outStock.html">
+                  <div
+                    class="sum-inner"
+                    style="
+                      background-color: #f39c10cc;
+                      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    "
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="img/Mediamodifier-Design.svg"
+                        alt=""
+                        width="15%"
+                      />
+                      <div class="content">
+                        <h3>Out of stock items</h3>
+                        <span id="outstock_count"></span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="orders.html">
+                  <div
+                    class="sum-inner"
+                    style="
+                      background-color: #dd4c39cc;
+                      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    "
+                  >
+                    <div class="d-flex">
+                      <img src="img/orders-icon.svg" alt="" width="15%" />
+                      <div class="content">
+                        <h3>Order items</h3>
+                        <span id="orders_count"></span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex last-child">
+                <a href="expired.html">
+                  <div
+                    class="sum-inner"
+                    style="
+                      background-color: #b6f310cc;
+                      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    "
+                  >
+                    <div class="d-flex">
+                      <img src="img/expired.jpg" alt="" width="15%" />
+                      <div class="content">
+                        <h3>Expired Items</h3>
+                        <span id="expired_count"></span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="expireSoon.html">
+                  <div
+                    class="sum-inner"
+                    style="
+                      background-color: #9245ebcc;
+                      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    "
+                  >
+                    <div class="d-flex">
+                      <img src="img/expired.jpg" alt="" width="15%" />
+                      <div class="content">
+                        <h3>Expire Soon</h3>
+                        <span id="expireSoon_count"></span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

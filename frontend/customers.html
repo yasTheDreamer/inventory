@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customers</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="font/stylesheet.css" />
+    <script type="text/javascript" src="scripts/customerHandler.js"></script>
+    <script type="text/javascript" src="scripts/addCustomer.js"></script>
+  </head>
+
+  <body>
+    <div class="d-flex">
+      <div class="part1">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo1.1.png" alt="Site Logo" width="200px"
+          /></a>
+        </div>
+        <div class="navslide">
+          <span>Navigation panel</span>
+          <ul>
+            <li>
+              <a href="index.html"
+                ><img src="img/dashboard-svgrepo-com.svg" alt="" width="22px" />
+                Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="stock.html"
+                ><img
+                  src="img/04d9a16ec558fcb7e07d9c35dce805bf.svg"
+                  alt=""
+                  width="22px"
+                />
+                Add items</a
+              >
+            </li>
+            <li>
+              <a href="profit.html"
+                ><img
+                  src="img/hand-money-rupee-coin-icon.svg"
+                  alt=""
+                  width="22px"
+                />
+                Your Profit</a
+              >
+            </li>
+            <li>
+              <a href="customers.html"
+                ><img src="img/credit list.svg" alt="" width="22px" /> Customer
+                list</a
+              >
+            </li>
+            <li>
+              <a href="sales.html"
+                ><img src="img/icon.svg" alt="" width="22px" /> Sell items</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="part2">
+        <div class="up-line">
+          <div class="container">
+            <div class="line-inside">
+              <a href="index.html"
+                ><img
+                  src="img/three-horizontal-lines-icon.svg"
+                  alt=""
+                  width="25px"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="title">
+            <h3 style="width: fit-content">Customers</h3>
+          </div>
+
+          <div class="lists">
+            <div class="lists-title">
+              <h3>Customers</h3>
+            </div>
+            <div class="main">
+              <table
+                width="100%"
+                style="border-collapse: collapse"
+                id="customers_table"
+              >
+                <tr style="background-color: #ffdd8ce8; text-align: left">
+                  <th>Customer Name</th>
+                  <th>Credit Taken</th>
+                  <th>Mobile Number</th>
+                  <th>Address</th>
+                  <th>Actions</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="add_product">
+            <div class="lists-title">
+              <h3>Add Customers</h3>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="name"
+                id="customer_name"
+                placeholder="customer name"
+                class="input"
+              />
+              <input
+                type="number"
+                name="mobile"
+                id="mobile_numnber"
+                placeholder="mobile number"
+                class="input"
+              />
+              <input
+                type="text"
+                name="address"
+                id="customer_address"
+                placeholder="customer address"
+                class="input"
+              />
+              <input
+                type="number"
+                name="credit_taken"
+                id="credit_taken"
+                placeholder="credit taken"
+                class="input"
+              />
+              <input
+                type="submit"
+                value="Register Customer"
+                id="submit_customer"
+                onclick="addCustomer()"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
